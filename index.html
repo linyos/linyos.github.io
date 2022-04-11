@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-      <!-- <link rel="stylesheet"  href="main.css"> -->
-    <link rel="stylesheet"  href="main.css">
+    <title>My Page</title>
+   <link rel ="stylesheet" href="main.css"> 
+<body>
 </head>
 <body>
+    <!--Side Bar-->
+    <div class="sidebar bar-block"   style="width:25%">
+        <h3 class="bar-item">Menu</h3>
+        <a href="#" class="bar-item button">Link 1</a>
+        <a href="#" class="bar-item button">Link 2</a>
+        <a href="#" class="bar-item button">Link 3</a>
+    </div>
+
     
-    <div class="example1">
-         Lorem ipsum dolor sit amet, consectetuer 
+
+    <div style="margin-left: 25%;">
+        <div class="container teal">
+            <h2>sidebar Navigation Example</h2>
+            <p>The sidebar with is set with "style="width:25%".</p>
+        </div>
+    
+
+
     </div>
     
-    <h1>CSS font-family</h1>
-    <p class="serif" > 這段文字是Times New Roman </p>
 
-    <p class="normal">这是一个段落,正常。</p>
-    <p class="italic">这是一个段落,斜体。</p>
-  
-
-    <p class="thick">加粗加大</p>
-
-
-    <p><b><a href="https://www.runoob.com/css/css-link.html" target="blank" > 連結樣式 </a>  </b> </p>
-
-
-    <!--連結區塊-->
-    <a href="https://www.runoob.com/css/css-link.html" target="blank">連結區塊 </a>
-
+    <script>
+        function open(){
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mysidebar").style.width="25%";
+            document.getElementById("mysidebar").style.display= "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function close()
+        {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mysidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
 </body>
 </html>
