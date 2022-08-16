@@ -175,7 +175,7 @@ ul.style1 a:hover{
 
 
 #menu li {
-    border-top: 1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 #menu li a , #menu li span{
@@ -315,7 +315,7 @@ ul.style1 a:hover{
 }
 
 #Project h2{
-    color: #6f6f6f6f;
+    color: #2c2a2a6f;
 }
 #Project p{
     margin-left: 2em;
