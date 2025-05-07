@@ -4,95 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Resume</title>
-    <link href="default.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>職業經歷 - Jason Lin</title>
+    <link href="modern.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="page" class="container">
-        <div id="header">
-            <div id="logo">
-                <img src="./images/head.jpg" alt="">
-              
-                                
-                <h2><a  href="https://github.com/linyos" ><i class="fa fa-github fa-5x  fa_custom" style="font-size:24px;"></i></a> Jason Lin</h2>
-               
-                <h2> <i class="material-icons fa_custom" style="font-size:24px">mail</i>laso85143@gmail.com</h2>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="./images/head.jpg" alt="Jason Lin">
+                <h1>Jason Lin</h1>
             </div>
-        
-            <div id="menu">
-                <ul>
-                    <li ><a href="./index.html" accesskey="1" title="">Home</a></li>
-                    <li > <a href="./project.html" accesskey="2" title="">Projects</a></li>
-                    <li class="current_page_item"> <a href="#" accesskey="3" title="">Career</a></li>
-                    <li> <a href="./Contact.html" accesskey="4" title="">Contact</a></li>
-
-                </ul>
+            <ul class="nav-links">
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="./project.html">專案作品</a></li>
+                <li><a href="./Careers.html" class="active">職業經歷</a></li>
+                <li><a href="./Contact.html">聯絡我</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
+    </nav>
 
-
-        
-        <div id="main">
-            <div id="banner">
-                <!-- <img src="./01241.png" alt="" class="image-full"/> -->
-            </div>
-            <div id="welcome">
-                <div class="title"> 
-                    <h2>About Me | </h2>
-                    <span class="byline" >About software developer</span>
+    <div class="main-content container">
+        <!-- 頁面標題 -->
+        <div class="hero" style="padding: 3rem 0;">
+            <h1>職業與學習經歷</h1>
+            <p>我的專業發展與技術成長之旅</p>
+        </div>        <!-- 學歷部分 -->
+        <section class="experience">
+            <h2 class="section-title">教育背景</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>國立成功大學 (NCKU)</h3>
+                        <div class="date">2018 - 2020</div>
+                        <p><strong>MMDL Lab</strong></p>
+                        <p>Development of On-line Computer Vision Aided Cutting Tool Loading Module for Machining Center</p>
+                        <p>研究專注於使用電腦視覺技術輔助加工中心的刀具裝載模組，提高生產效率和精確度。</p>
+                    </div>
                 </div>
-
                 
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>國立高雄科技大學 (NKUST)</h3>
+                        <div class="date">2012 - 2018</div>
+                        <p><strong>MAD 實驗室</strong></p>
+                        <p>輕型電助載具動力估測法則研究：動力預測模型開發 (MATLAB)</p>
+                        <p>建立了輕型電助載具的動力預測模型，使用 MATLAB 進行數據分析與模型開發。</p>
+                    </div>
+                </div>
             </div>
-
-            <div id="Career">
-                <ul>
-                    <li>
-                        
-                        <h2>Graduate</h2>
-                        <hr>
-                        <p><b>NKUST 2012-2018 (MAD)</b></p>
-                            <p>輕型電助載具動力估測法則研究 : 動力預測模型開發(MATLAB)</p>
-                        <p><b>NCKU 2018-2020 (MMDL Lab)</b></p>
-                        <p>  Development of On-line Computer Vision Aided Cutting Tool 
-                            Loading Module for Machining Center</p>
-                    </li>
-                    <br><br>
-                    <li>
-                        <h2>Experience</h2>
-                        <hr>
-                        <li>
-                            <ul>
-                                <p><b> APIC 2021-2022 : Software Engineer (2021/02 - 2022/07) </b>
-                                        <br>
-                                        NX CAD/CAM Secondary Development
-                                </p>
-                            </ul>
-                            
-                            
-                        </li>
-                    </li>
-                    <br><br>
-                    <li>
-                        <h2>Skills</h2>
-                        <hr>
-                        <p><b>Programming</b></p>
-                        <p>C++   C#   VB</p>
-                        <p><b>Web</b></p>
-                        <p>Html Css JavaScript</p>
-                        <p><b>DataBase</b></p>
-                        <p>MySQL</p>
-                        <p><b>Virtual Machine</b></p>
-                        <p>VM Ware</p>
-                        <p><b>Version Control</b></p>
-                        <p>Git/Github</p>
-                    </li>
-                </ul>
+        </section>
+        
+        <!-- 工作經驗部分 -->
+        <section class="experience">
+            <h2 class="section-title">工作經驗</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>APIC - 軟體工程師</h3>
+                        <div class="date">2021/02 - 2022/07</div>
+                        <p><strong>NX CAD/CAM 次開發</strong></p>
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                            <li>開發客製化 CAD/CAM 解決方案</li>
+                            <li>透過次開發提升生產效率和準確度</li>
+                            <li>建立自動化工作流程和工序表單</li>
+                            <li>整合工業系統與數據庫</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-
+        </section>
+        
+        <!-- 技能部分 -->
+        <section class="skills">
+            <h2 class="section-title">專業技能</h2>
+            
+            <div class="skill-categories">
+                <div class="skill-category">
+                    <h3>程式語言</h3>
+                    <ul class="skill-list">
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>VB</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>網頁開發</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>數據庫</h3>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>虛擬化技術</h3>
+                    <ul class="skill-list">
+                        <li>VM Ware</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>版本控制</h3>
+                    <ul class="skill-list">
+                        <li>Git/Github</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>工業軟體</h3>
+                    <ul class="skill-list">
+                        <li>Siemens NX</li>
+                        <li>Siemens Mendix</li>
+                        <li>Unity3D</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
+    
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jason Lin. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // 漢堡選單功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            burger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+        });
+    </script>
 </body>
 </html>

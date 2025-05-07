@@ -4,113 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Resume</title>
-    <link href="default.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>專案作品 - Jason Lin</title>
+    <link href="modern.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div id="page" class="container">
-        <div id="header">
-            <div id="logo">
-                <img src="./images/head.jpg" alt="">
-              
-                <h2><a  href="https://github.com/linyos" ><i class="fa fa-github fa-5x  fa_custom" style="font-size:24px;"></i></a> Jason Lin</h2>
-               
-                <h2> <i class="material-icons fa_custom" style="font-size:24px">mail</i>laso85143@gmail.com</h2>
-
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="./images/head.jpg" alt="Jason Lin">
+                <h1>Jason Lin</h1>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="./index.html" accesskey="1" title="">Home</a> </li>
-                    <li  class="current_page_item"> <a href="#" accesskey="2" title="">Projects</a></li>
-                    <li> <a href="./Careers.html" accesskey="3" title="">Career</a></li>
-                    <li> <a href="./Contact.html" accesskey="4" title="">Contact</a></li>
-                </ul>
+            <ul class="nav-links">
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="./project.html" class="active">專案作品</a></li>
+                <li><a href="./Careers.html">職業經歷</a></li>
+                <li><a href="./Contact.html">聯絡我</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
+    </nav>
 
-        <div id="main">
-            <div id="banner">
-
-            </div>
-            <div id="welcome">
-                <div class="title">
-                    <h2>About Me</h2>
-                    <span class="byline">About software developer</span>
+    <div class="main-content container">
+        <!-- 頁面標題 -->
+        <div class="hero" style="padding: 3rem 0;">
+            <h1>專案作品集</h1>
+            
+        </div>        <!-- 專案內容 -->
+        <!-- CNC Machine 專案 -->
+        <section class="project-section">
+            <h2 class="section-title">CNC 機械專案</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./images/AR.png" alt="AR 專案">
+                    <div class="project-content">
+                        <h3>Unity 虛擬刀具路徑模擬</h3>
+                        <p>本專案以 Unity 結合 C# 進行開發，建構一套整合 虛擬刀具路徑模擬、資料庫管理與條碼觸發技術 的智慧製造輔助系統。
+                            使用者可透過手持裝置（如平板或手機）掃描QRCode，自動呼叫對應加工任務，於 Unity 中進行 3D 模擬。系統支援與 MySQL 資料庫連接，可動態匯入與管理刀具路徑檔（如 .txt/.json/.xml）與 3D 模型檔案（如 .obj/.fbx）。</p>
+                        <a href="https://drive.google.com/file/d/1ecrGZpGrJ-5TLaM0xT0otehfwXb98_RA/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./images/Remote.jpg" alt="遠程控制">
+                    <div class="project-content">
+                        <h3>虛實同步遠端監控系統</h3>
+                        <p>本專案以 Unity 結合 C# 進行開發，成功串接 SkyMars API 與 CNC 加工機台控制器，建構一套虛實整合的數據傳輸架構。
+                            透過網路配置與通訊協議，實現即時機台監控與遠端同步模擬，進一步強化智慧製造的透明化與即時性。</p>
+                        <a href="https://drive.google.com/file/d/17EYbMZ3RCRwE03N6239QLbG1AJijUtn6/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
                 </div>
             </div>
-
-            <div id="Project">
-                <ul >
-                    <li>
-                        <h2>CNC Machine</h2>
-                        <hr>
-                        <h3><a href="https://drive.google.com/file/d/1ecrGZpGrJ-5TLaM0xT0otehfwXb98_RA/view?usp=sharing" target="_blank">Simulation of Cutting Path Using AR</a></h3>
-                        <p> 使用Unity C#做開發，建構虛擬刀具路徑模擬，透過連接外部資料庫MySQL的結合，將路徑檔案與模型檔匯入至資料庫中。</p>
-                        <p>進行刀具模擬時，可透過手持裝置鏡頭掃描條碼，即可呼叫所需資料進行模擬。</p>
-                        <img src="./images/AR.png" width="250"  alt="AR" style="vertical-align:bottom"> 
-                    </li>
-                    <li>
-                        <h3><a href="https://drive.google.com/file/d/17EYbMZ3RCRwE03N6239QLbG1AJijUtn6/view?usp=sharing" target="_blank"> Remotion CNC Control Information</a></h3>
-                            <p>使用Unity C#做開發串聯SkyMars API 透過網路配置連接至加工機機台控制器，即時將控制器資料傳遞至電腦伺服器中。
-                                而伺服器端則透過TCP/IP的方式傳送數據至用戶端，透過這種方式來達到同步虛實整合的效果。</p>
-                            <img src="./images/Remote.jpg" width="250"  alt="Remote" style="vertical-align:bottom"> 
-                    </li>
-
-                    <br><br><br>
-                    <li>
-                        <h2>Secondary Development: Siemens NX CAD/CAM</h2>
-                        <hr>
-                        <h3> 自動組裝模擬與量測間隙報告</h3>
-                            <p> 專案以自行車裝配為例:以WinForm建立管理零件表資料並彙整成XML。在建立組裝模擬時，由XML來取得零件相關檔案路徑並且匯入零件檔進行裝配。
-                                最後透過定義好的零件屬性於NX內進行量測，並藉由CheckMate進行檢驗標準的作業。
-                                後續增加了能夠自動產出相關零件的檢驗報告，將每一個量測的零件距離彙整成Excel表。當裝配模擬檢驗未通過標準時，報告會特別標示出不通過項目以便於可讀性。
-                            </p>
-                    </li>
-                    <li>
-                        <h3><a href="https://drive.google.com/file/d/1erqxX_FqYnsE_xqpqCJX-6TdlL6czKuV/view?usp=sharing" target="_blank"> 自動加工工序表單</a></h3>
-                        <p>客製化設計加工工序表單，提取相關加工參數並輸出至Excel中，提高CAM生產效率。</p>
-                        <img src="./images/CAM_WorkShop.png" width="250"  alt="WorkShop" style="vertical-align:bottom"> 
-                    </li>
-                    <li>
-                            <h3><a href="https://drive.google.com/file/d/1KGyluVs7F3tT1sAuWmt_4wtneR-P_n0d/view?usp=sharing" target="_blank"> 自動長度與圓孔螺紋資訊標註</a></h3>
-                            <P>建立圖面圓孔特徵的自動標註流程並建立孔特徵表，提高繪圖的作業效率。</P>
-                            <img src="./images/draw.jpg" width="250"  alt="Drawing" style="vertical-align:bottom"> 
-                    </li>   
-                    <li>
-                        <h3><a href="https://drive.google.com/file/d/1grx1gG2_AgldAAVHYZYXGTfGd8k05exM/view?usp=sharing" target="_blank">量測檢測檢查報告呈現</a></h3>
-                            <p>以 Knowledge Fusion(KF) 撰寫客製化檢測標準，並透過CheckMate與requirement validation進行即時標準檢驗。</p>
-                            <img src="./images/CheckMate.jpg" width="250" alt="CheckMate" style="vertical-align:bottom;">    
-                    </li>
-                    
-                       
-                    <br><br><br>
-
-                    <li>
-                        <h2>Web Application : Siemens Mendix</h2>
-                        <hr>
-                        <h3><a href="https://drive.google.com/file/d/11eBL1xIYmJyXC3r5_MUTutmeePqmGIbP/view?usp=sharing" target="_blank"> 業務管理財報與圖表</a></h3>
-                            <p>簡易業績損益表單，並以圖表方式呈現</p>
-                            <img src="./images/Mendix_Chart.jpg" width="250" alt="Mendix_Chart " style="vertical-align:bottom;">
-                    </li>
-
-                    <li>
-                        <h3><a href="https://drive.google.com/file/d/1vHCg5TEG9yZG8TRQNUp3LBEZexVydkRn/view?usp=sharing" target ="_blank">問題表單提報系統</a></h3>
-                            <p>現場人員與設計部間的問題單呈報系統，以簡易的UI介面描述問題也可上傳拍攝圖片。</p>
-                            <p>問題單可指定部門解決該問題，而當問題解決時，系統會記錄當下時間並標示下來該問題解決的狀態。</p>
-                            <img src="./images/Mendix_Issue.jpg" width="250" alt="Mendix_Issue" style="vertical-align:bottom;">
-                    </li>
-
-                    <li>
-                        <h3><a href="https://drive.google.com/file/d/196vBKFzFrFNe4qirFUmb3-kAo61i4WbS/view?usp=sharing" target="_blank"> CAM工序表單與3D模型整合</a></h3>
-                            <p>透過Web架構，為現場作業系統上顯示預加工工件工序表單與3D模型</p>
-                            <img src="./images/Mendix_3d.jpg" width="250" alt="Mendix_3D " style="vertical-align:bottom;">
-                    </li> 
-                </ul>
+        </section>
+        
+        <!-- Siemens NX CAD/CAM 專案 -->
+        <section class="project-section">
+            <h2 class="section-title">Siemens NX CAD/CAM 次開發專案</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./images/CheckMate.jpg" alt="組裝模擬">
+                    <div class="project-content">
+                        <h3>自動組裝模擬與量測間隙報告</h3>
+                        <p>本專案以「自行車組裝流程」作為模擬範例，建構一套整合 Siemens NX API 二次開發、CheckMate 與 Excel 報表匯出 的自動化管理與檢驗系統。目標為提升零件裝配資訊的管理效率，並串連 3D 模型與檢驗作業，實現工程流程的數位化與自動化。</p>
+                        <a href="https://drive.google.com/file/d/1grx1gG2_AgldAAVHYZYXGTfGd8k05exM/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./images/CAM_WorkShop.png" alt="工序表單">
+                    <div class="project-content">
+                        <h3>自動加工工序表單</h3>
+                        <p>客製化設計加工工序表單，提取相關加工參數並輸出至 Excel 中，提高 CAM 生產效率。</p>
+                        <a href="https://drive.google.com/file/d/1erqxX_FqYnsE_xqpqCJX-6TdlL6czKuV/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./images/draw.jpg" alt="自動標註">
+                    <div class="project-content">
+                        <h3>自動長度與圓孔螺紋資訊標註</h3>
+                        <p>建立圖面圓孔特徵的自動標註流程並建立孔特徵表，提高繪圖的作業效率。</p>
+                        <a href="https://drive.google.com/file/d/1KGyluVs7F3tT1sAuWmt_4wtneR-P_n0d/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        
+        <!-- Siemens Mendix Web 專案 -->
+        <section class="project-section">
+            <h2 class="section-title">Siemens Mendix Web 應用程式</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./images/Mendix_Chart.jpg" alt="業務管理">
+                    <div class="project-content">
+                        <h3>業務管理財報與圖表</h3>
+                        <p>簡易業績損益表單，並以圖表方式呈現數據，讓業務數據一目了然。</p>
+                        <a href="https://drive.google.com/file/d/11eBL1xIYmJyXC3r5_MUTutmeePqmGIbP/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./images/Mendix_Issue.jpg" alt="問題表單">
+                    <div class="project-content">
+                        <h3>問題表單提報系統</h3>
+                        <p>現場人員與設計部間的問題單呈報系統，以簡易的 UI 介面描述問題也可上傳拍攝圖片。問題單可指定部門解決該問題，而當問題解決時，系統會記錄當下時間並標示下來該問題解決的狀態。</p>
+                        <a href="https://drive.google.com/file/d/1vHCg5TEG9yZG8TRQNUp3LBEZexVydkRn/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./images/Mendix_3d.jpg" alt="3D模型整合">
+                    <div class="project-content">
+                        <h3>CAM工序表單與3D模型整合</h3>
+                        <p>透過 Web 架構，為現場作業系統上顯示預加工工件工序表單與 3D 模型，提升操作效率和視覺化體驗。</p>
+                        <a href="https://drive.google.com/file/d/196vBKFzFrFNe4qirFUmb3-kAo61i4WbS/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jason Lin. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // 漢堡選單功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            burger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+        });
+    </script>
 </body>
 </html>

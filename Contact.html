@@ -4,59 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Resume</title>
-    <link href="default.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>聯絡我 - Jason Lin</title>
+    <link href="modern.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="page" class="container">
-        <div id="header">
-            <div id="logo">
-                <img src="./images/head.jpg" alt="">
-         
-                <h2><a  href="https://github.com/linyos" ><i class="fa fa-github fa-5x  fa_custom" style="font-size:24px;"></i></a> Jason Lin</h2>
-               
-                <h2> <i class="material-icons fa_custom" style="font-size:24px">mail</i>laso85143@gmail.com</h2>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="./images/head.jpg" alt="Jason Lin">
+                <h1>Jason Lin</h1>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="./index.html" accesskey="1" title="">Home</a></li>
-                    <li > <a href="./project.html" accesskey="2" title="">Projects</a></li>
-                    <li > <a href="./Careers.html" accesskey="3" title="">Career</a></li>
-                    <li class="current_page_item"> <a href="#" accesskey="4" title="">Contact</a></li>
-                </ul>
+            <ul class="nav-links">
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="./project.html">專案作品</a></li>
+                <li><a href="./Careers.html">職業經歷</a></li>
+                <li><a href="./Contact.html" class="active">聯絡我</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
+    </nav>
 
-        <div id="main">
-            <div id="banner">
-
-            </div>
-            <div id="welcome">
-                <div class="title">
-                    <h2>Contact Me </h2>
-                    <span class="byline"></span>
-                </div>
-
-                <ul class="style1">
-                    <li class="first">
-                        <p class="date"> <img src="./images/gmail.png" width="68"></p>
-                        <h2>Gmail - laso85143@gmail.com</h2>
-                        <p>常用信箱 <br></p>
-                    </li>
-                    <li>
-                        <p class="date"> <img src="./images/Github.png" width="68"> </p>
-                        <h2><a href="https://github.com/linyos" target="_blank">GitHub- linyos</a></h2>
-                        <p>陸續更新...</p>
-                    </li>
-                </ul>
-
-            </div>
-
+    <div class="main-content container">
+        <!-- 頁面標題 -->
+        <div class="hero" style="padding: 3rem 0;">
+            <h1>聯絡我</h1>
+            <p>歡迎與我聯繫討論合作機會</p>
         </div>
-
-
+        
+        <!-- 聯絡資訊 -->
+        <div class="contact">
+            <h2 class="section-title">保持聯繫</h2>
+            <p>如果您有任何問題、合作機會或想要進一步了解我的專案，請隨時與我聯繫。</p>
+            
+            <div class="contact-links">
+                <a href="mailto:laso85143@gmail.com" class="contact-item">
+                    <img src="./images/gmail.png" alt="Gmail" style="width: 80px; height: 80px; object-fit: contain;">
+                    <h3>Gmail</h3>
+                    <p>laso85143@gmail.com</p>
+                    <span>常用信箱</span>
+                </a>
+                
+                <a href="https://github.com/linyos" target="_blank" class="contact-item">
+                    <img src="./images/Github.png" alt="GitHub" style="width: 80px; height: 80px; object-fit: contain;">
+                    <h3>GitHub</h3>
+                    <p>linyos</p>
+                    <span>查看我的代碼倉庫</span>
+                </a>
+            </div>
+            
+            <!-- 聯絡表單 (純視覺設計，未實現功能) -->
+            <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <h3 style="margin-bottom: 1.5rem;">發送訊息</h3>
+                <form style="text-align: left;">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">姓名</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.75rem; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">電子郵件</label>
+                        <input type="email" id="email" style="width: 100%; padding: 0.75rem; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">訊息內容</label>
+                        <textarea id="message" rows="5" style="width: 100%; padding: 0.75rem; border-radius: 4px; border: 1px solid #ddd; resize: vertical; box-sizing: border-box;"></textarea>
+                    </div>
+                    
+                    <button type="button" style="background-color: var(--primary-color); color: white; border: none; padding: 0.75rem 2rem; border-radius: 4px; cursor: pointer; font-weight: 500;">送出訊息</button>
+                </form>
+            </div>
+        </div>
     </div>
+    
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jason Lin. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // 漢堡選單功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            burger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+        });
+    </script>
 </body>
 </html>
