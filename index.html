@@ -40,84 +40,95 @@
             <p>專業軟體開發者 | CAD/CAM 二次開發 </p>
         </div>
 
-        <!-- 個人資料區塊 -->
+        <!-- 個人資料區塊 - 改為雙欄佈局 -->
         <div class="profile">
-            <img src="./images/head.jpg" alt="Jason Lin" class="profile-image">
-            <div class="contact-info">
-                <h2>關於我</h2>
-                <p>我專注於CAD/CAM系統二次開發與MES系統整合，導入自動化輔助工具，簡化操作流程、加速NC程式編輯，提升智慧製造效率。具備多平台客製開發與系統整合經驗，致力於以技術優化製造流程，推動數位轉型。</p>
+            <!-- 左側欄：頭像和社交連結 -->
+            <div class="profile-left">
+                <img src="./images/head.jpg" alt="Jason Lin" class="profile-image">
                 <div class="social-links">
                     <a href="https://github.com/linyos" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     <a href="mailto:laso85143@gmail.com"><i class="fas fa-envelope"></i> laso85143@gmail.com</a>
                 </div>
-            </div>            <!-- 技能區塊 -->
-            <div class="skills">
-                <h2 class="section-title">我的技能</h2>
-                <div class="skill-categories">
-                    <div class="skill-category">
-                        <h3>程式語言</h3>
-                        <ul class="skill-list">
-                            <li>.Net Core C#(主力開發)</li>
-                            <li>python(業餘學習)</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>網頁開發</h3>
-                        <ul class="skill-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>數據庫</h3>
-                        <ul class="skill-list">
-                            <li>MySQL</li>
-                            <li>MSSQL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>版本控制</h3>
-                        <ul class="skill-list">
-                            <li>Git/Github</li>
-                        </ul>
+            </div>
+            
+            <!-- 右側欄：個人介紹和技能 -->
+            <div class="profile-right">
+                <!-- 關於我 -->
+                <div class="contact-info">
+                    <h2>關於我</h2>
+                    <p>我專注於CAD/CAM系統二次開發與MES系統整合，導入自動化輔助工具，簡化操作流程、加速NC程式編輯，提升智慧製造效率。具備多平台客製開發與系統整合經驗，致力於以技術優化製造流程，推動數位轉型。</p>
+                </div>
+                
+                <!-- 技能區塊 -->
+                <div class="skills">
+                    <h2 class="section-title">我的技能</h2>
+                    <div class="skill-categories">
+                        <div class="skill-category">
+                            <h3>程式語言</h3>
+                            <ul class="skill-list">
+                                <li>.Net Core C#(主力開發)</li>
+                                <li>C++</li>
+                                <li>Python(業餘學習)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>網頁開發</h3>
+                            <ul class="skill-list">
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>數據庫</h3>
+                            <ul class="skill-list">
+                                <li>MySQL</li>
+                                <li>MSSQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>其他</h3>
+                            <ul class="skill-list">
+                                <li>Git/Github</li>
+                                <li>Docker</li>
+                                <li>Unity 3D</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- 精選專案 -->
-            <div class="featured-projects">
-                <h2 class="section-title">精選專案</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="./images/AR.png" alt="AR 專案">
-                        <div class="project-content">
-                            <h3>刀具路徑 AR 模擬</h3>
-                            <p>本專案旨在建立一套結合 Unity 3D 引擎 與 C# 程式語言 的虛擬刀具路徑模擬系統，專注於模擬 CNC 加工中刀具移動軌跡與工件交互的過程。透過 3D 視覺化方式呈現加工流程，有助於提升加工前路徑規劃的準確性與安全性。</p>
-                            <a href="https://drive.google.com/file/d/1ecrGZpGrJ-5TLaM0xT0otehfwXb98_RA/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./images/Remote.jpg" alt="CNC 控制">
-                        <div class="project-content">
-                            <h3>CNC 監控系統</h3>
-                            <p>本專案致力於開發一套基於 Unity 與 C# 的可視化應用，成功串接 SkyMars API 並連接至 CNC 加工機台控制器，實現 即時數據傳輸與狀態回饋視覺化。</p>
-                            <a href="https://drive.google.com/file/d/17EYbMZ3RCRwE03N6239QLbG1AJijUtn6/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./images/CAM_WorkShop.png" alt="CAM工作表">
-                        <div class="project-content">
-                            <h3>Siemens NX 加工電子表單</h3>
-                            <p>，開發一套 可客製化設計的加工工序表單系統，結合 Siemens NX 二次開發 API，自動提取加工程式中各刀具路徑與切削參數，並輸出至 Excel 表單。</p>
-                            <a href="https://drive.google.com/file/d/1erqxX_FqYnsE_xqpqCJX-6TdlL6czKuV/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
-                        </div>
+        </div>
+        
+        <!-- 精選專案 -->
+        <div class="featured-projects">
+            <h2 class="section-title">精選專案</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./images/AR.png" alt="AR 專案">
+                    <div class="project-content">
+                        <h3>刀具路徑 AR 模擬</h3>
+                        <p>本專案旨在建立一套結合 Unity 3D 引擎 與 C# 程式語言 的虛擬刀具路徑模擬系統，專注於模擬 CNC 加工中刀具移動軌跡與工件交互的過程。透過 3D 視覺化方式呈現加工流程，有助於提升加工前路徑規劃的準確性與安全性。</p>
+                        <a href="https://drive.google.com/file/d/1ecrGZpGrJ-5TLaM0xT0otehfwXb98_RA/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="./project.html" class="project-link">查看更多專案</a>
+                <div class="project-card">
+                    <img src="./images/Remote.jpg" alt="CNC 控制">
+                    <div class="project-content">
+                        <h3>CNC 監控系統</h3>
+                        <p>本專案致力於開發一套基於 Unity 與 C# 的可視化應用，成功串接 SkyMars API 並連接至 CNC 加工機台控制器，實現 即時數據傳輸與狀態回饋視覺化。</p>
+                        <a href="https://drive.google.com/file/d/17EYbMZ3RCRwE03N6239QLbG1AJijUtn6/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
                 </div>
+                <div class="project-card">
+                    <img src="./images/CAM_WorkShop.png" alt="CAM工作表">
+                    <div class="project-content">
+                        <h3>Siemens NX 加工電子表單</h3>
+                        <p>開發一套可客製化設計的加工工序表單系統，結合 Siemens NX 二次開發 API，自動提取加工程式中各刀具路徑與切削參數，並輸出至 Excel 表單。</p>
+                        <a href="https://drive.google.com/file/d/1erqxX_FqYnsE_xqpqCJX-6TdlL6czKuV/view?usp=sharing" class="project-link" target="_blank">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="./project.html" class="project-link">查看更多專案</a>
             </div>
         </div>
         
